@@ -1,4 +1,5 @@
 import React from 'react';
+import Likes from '../Likes';
 
 function Post(props) {
     return(
@@ -7,6 +8,9 @@ function Post(props) {
             <p>By: {props.author}</p>
             <div>
                 <p>{props.body}</p>
+            </div>
+            <div>
+                <Likes />
             </div>
         </div>
     )
